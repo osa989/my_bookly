@@ -11,7 +11,7 @@ class HomeViewBody extends StatelessWidget {
       children: [
         CustomAppBar(),
         CustomListViewBodyItem(),
-        Expanded(child: FeaturedBooksListView()),
+        (child: FeaturedBooksListView()),
       ],
     );
   }
