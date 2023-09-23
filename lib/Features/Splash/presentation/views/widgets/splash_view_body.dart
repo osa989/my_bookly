@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+
+import 'package:go_router/go_router.dart';
 import 'package:my_bookly/Features/Splash/presentation/views/widgets/sliding_text.dart';
-import 'package:my_bookly/Features/home/presentation/views/home_view.dart';
-import 'package:my_bookly/constants.dart';
+
+import 'package:my_bookly/core/utils/app_router.dart';
 import 'package:my_bookly/core/utils/assets.dart';
 
 class SplashViewBody extends StatefulWidget {
@@ -26,8 +27,6 @@ class _SplashViewBodyState extends State<SplashViewBody>
     navigateToHome();
   }
 
- 
-
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -43,16 +42,11 @@ class _SplashViewBodyState extends State<SplashViewBody>
     );
   }
 
-
-
-
-
-
-
-   void navigateToHome() {
+  void navigateToHome() {
     Future.delayed(const Duration(seconds: 2), () {
-      Get.to(() => const HomeView(),
-          transition: Transition.fade, duration: kTransitionDuration);
+      // Get.to(() => const HomeView(),
+      //     transition: Transition.fade, duration: kTransitionDuration);
+      GoRouter.of(context).push(AppRouter.kHomeView);
     });
   }
 
@@ -64,9 +58,5 @@ class _SplashViewBodyState extends State<SplashViewBody>
         Tween<Offset>(begin: const Offset(0, 2), end: Offset.zero)
             .animate(animationController);
     animationController.forward();
-
   }
 }
-
-
-
