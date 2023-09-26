@@ -14,7 +14,10 @@ class BookDetailsSection extends StatelessWidget {
       children: [
         Padding(
           padding: EdgeInsets.symmetric(horizontal: width * .2),
-          child: const CustomBookImage(imageUrl: "https://images.yaoota.com/Wxqq3-rmUdHT6N1uWfox3VvM_ZI=/trim/yaootaweb-production/media/crawledproductimages/cd1faa59ea59a76a8e6e7790df0897baf2d22584.jpg",),
+          child: const CustomBookImage(
+            imageUrl:
+                "https://images.yaoota.com/Wxqq3-rmUdHT6N1uWfox3VvM_ZI=/trim/yaootaweb-production/media/crawledproductimages/cd1faa59ea59a76a8e6e7790df0897baf2d22584.jpg",
+          ),
         ),
         const SizedBox(
           height: 43,
