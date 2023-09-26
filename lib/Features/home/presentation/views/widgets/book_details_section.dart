@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:my_bookly/Features/home/presentation/views/widgets/book_rating.dart';
 import 'package:my_bookly/Features/home/presentation/views/widgets/custom_book_item.dart';
 import 'package:my_bookly/core/utils/styles.dart';
-import 'package:my_bookly/core/widgets/books_action.dart';
+import 'package:my_bookly/Features/home/presentation/views/widgets/books_action.dart';
 
 class BookDetailsSection extends StatelessWidget {
   const BookDetailsSection({super.key});
